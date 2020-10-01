@@ -1,0 +1,46 @@
+h1 {
+  text-align: center; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  text-align: center; }
+  .wrap > * {
+    margin: 0;
+    margin: 0.4rem 0; }
+
+.btn {
+  background-color: gray;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle;
+  line-height: 1.2;
+  user-select: none;
+  transition: all 500ms;
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 1.3rem;
+  letter-spacing: 1px; }
+  .btn:hover {
+    background-color: #8d8d8d; }
+
+.h2 {
+  font-size: 2.7rem;
+  font-weight: 300; }
+
+.hex-code {
+  color: orange;
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
