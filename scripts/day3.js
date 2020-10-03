@@ -20,6 +20,16 @@ var quotes = [
     quote:
       "The mystery of human existence lies not in just staying alive, but in finding something to live for",
   },
+  {
+    name: "Jose Mourinho",
+    quote:
+      "It's not important how we play. If you have a Ferrari and I have a small car, to beat you in a race I have to break your wheel or put sugar in your tank",
+  },
+  {
+    name: "Kofi Annan",
+    quote:
+      "When women thrive all of society benefits and succeeding generations are given a better start in life",
+  },
 ];
 
 function random(value) {
