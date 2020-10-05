@@ -26,6 +26,11 @@ body {
   background-color: #eee;
   border-radius: 5px;
 
+  @media only screen and(max-width : 800px) {
+    width: auto;
+    font-size: 1.2rem;
+  }
+
   & p {
     margin: 0.5rem 0.5rem;
   }
