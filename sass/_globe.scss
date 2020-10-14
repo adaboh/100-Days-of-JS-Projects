@@ -6,90 +6,66 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: url(../images/pattern-img.jpg);
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  // max-height: 100vh;
-}
-
 h1 {
+  margin: 2rem 0;
   text-align: center;
-  margin: 1rem;
-  font-size: 2.5rem;
 }
 
 .wrap {
-  border: 1px double #fff;
-  width: 370px;
-  margin: 10% auto;
-  text-align: center;
-  height: 550px;
-  box-shadow: 0 5px 20px -5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  // background-color: #fff;
+  margin: 8rem 0;
 }
 
-.counter {
-  &-header {
-    color: #fff;
-    font-size: 2.5rem;
-  }
-  &-no {
-    display: block;
-    font-size: 10rem;
-    color: #000;
-    line-height: 1;
-    margin: 0.8rem 0;
-    user-select: none;
+.col {
+  max-width: 650px;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  &-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
 .btn {
-  display: block;
-  background-color: #007bff;
-  margin: 1rem 0;
-  padding: 0.3rem 0.9rem;
-  border: 1px solid #007bff;
-  border-radius: 4px;
-  user-select: none;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  color: #fff;
-  cursor: pointer;
+  border: 2px solid steelblue;
+  width: 2rem;
+  height: 2.5rem;
 
-  text-align: center;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 3px;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 250ms ease-in;
+  outline: none;
+  background-color: steelblue;
 
-  &:hover:not(:last-of-type) {
-    background-color: lighten(#0062cc, 5%);
+  position: absolute;
+  top: 50%;
+
+  &-left {
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  &-right {
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+
+  &:hover {
+    background-color: #fff;
   }
 
   &:focus {
-    background-color: #0069d9;
-    border-color: #0062cc;
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 1);
-    box-shadow: 0 0 0 0.2rem rgba(#000, 0.5);
-    outline: none;
+    border-color: #000;
+    background-color: #fff;
   }
-}
 
-.reset {
-  text-align: left;
-  align-self: flex-start;
-  margin: 0 1rem;
-  background-color: cadetblue;
-
-  &:focus {
-    background-color: cadetblue;
-    border-color: cadetblue;
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 1);
-    box-shadow: 0 0 0 0.2rem rgba(#000, 0.5);
-    outline: none;
+  & i {
+    font-size: 2rem;
+    color: #000;
   }
 }
