@@ -14,49 +14,108 @@ h1 {
 
 body {
   font-family: "Source Code Pro", monospace;
-  background-image: url(../images/image1.jpg);
+  background-image: url(../images/image-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  // color: #fff;
+  color: #fff;
 }
 
 .title {
-  // text-align: center;
-  // font-size: 1.8rem;
-  // margin-bottom: 4rem;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
 
   & span {
-    // display: block;
-    // margin-left: 15rem;
-    // color: tomato;
-    // font-size: 2rem;
-    // text-transform: uppercase;
+    display: block;
+    margin-left: 15rem;
+    color: tomato;
+    font-size: 2rem;
+    text-transform: uppercase;
   }
 }
 
 .col {
-  // border: 1px solid #fff;
-  // width: 450px;
-  // margin: 0 auto;
-  // text-align: center;
-  // border-radius: 3px;
+  border: 1px solid #fff;
+  width: 550px;
+  margin: 8rem auto;
+  text-align: center;
+  border-radius: 3px;
+  position: relative;
 }
 
 .client {
   &-img {
-    // width: 200px;
-    // height: 200px;
-    // border-radius: 50%;
-    // object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  &-content {
+    position: relative;
+    transform: translateY(-40%);
+  }
+  &-name {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+  }
+  &-msg {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+  }
+  &-ratings {
+    margin-bottom: 1rem;
+    user-select: none;
+
+    & i {
+      color: tomato;
+    }
   }
 }
 
 .btn {
+  border: 1px solid #000;
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 250ms ease-in;
+  outline: none;
+  user-select: none;
+
+  position: absolute;
+  top: 50%;
+  // margin-right: -1rem;
+
+  &-left {
+    left: -10px;
+    transform: translate(-100%, -50%);
+  }
+  &-right {
+    right: -10px;
+    transform: translate(100%, -50%);
+  }
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &:focus {
+    border-color: rgb(255, 102, 102);
+    box-shadow: 0 0 0 0.1rem rgba(255, 102, 102, 0.5);
+  }
   & i {
-    // color: red;
-    // font-size: 2rem;
+    color: rgb(255, 102, 102);
+    font-size: 2rem;
+    outline: none;
   }
 }
