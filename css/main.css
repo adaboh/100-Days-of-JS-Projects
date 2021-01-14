@@ -1,19 +1,11 @@
 h1 {
-  text-align: center; }
+  text-align: center;
+}
 
 body {
-  font-family: Arial, Helvetica, sans-serif; }
-
-.wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2.5rem;
-  text-align: center; }
-  .wrap > * {
-    margin: 0;
-    margin: 0.4rem 0; }
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #91286d;
+}
 
 .btn {
   background-color: gray;
@@ -26,21 +18,20 @@ body {
   cursor: pointer;
   vertical-align: middle;
   line-height: 1.2;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   transition: all 500ms;
   font-weight: 300;
   font-family: inherit;
   font-size: 1.3rem;
-  letter-spacing: 1px; }
-  .btn:hover {
-    background-color: #8d8d8d; }
-
-.h2 {
-  font-size: 2.7rem;
-  font-weight: 300; }
-
-.hex-code {
-  color: orange;
-  display: none; }
-
-/*# sourceMappingURL=main.css.map */
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn:hover {
+  background-color: #b3b3b3;
+}/*# sourceMappingURL=main.css.map */
