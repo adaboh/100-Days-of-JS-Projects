@@ -1,20 +1,21 @@
-const hexCodeDisplay = document.querySelector(".hex-code");
 const btn = document.querySelector(".btn");
+const hex_code_display = document.querySelector(".hex-code");
 const body = document.querySelector("body");
 
-// var hex = [0, 1, 2, 3, 4, 5, 6, 7, 9, "a", "b", "c", "d", "e", "f"];
+function random(value) {
+  return Math.floor(Math.random() * value);
+}
+const alpha_num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 
-btn.addEventListener("click", function () {
-  // let hex = "123456789abcdef";
-  let hex = [0, 1, 2, 3, 4, 5, 6, 7, 9, "A", "B", "D", "E", "F", "f"];
-  let hexCode = "#";
+btn.addEventListener("click", function (e) {
+  let hex_code = "#";
   let i = 0;
   while (i < 6) {
-    hexCode += hex[random(hex.length)];
+    hex_code += alpha_num[random(alpha_num.length)];
+    // hex_code += alpha_num[alpha_num.length];
     i++;
   }
-
-  hexCodeDisplay.style.display = "block";
-  hexCodeDisplay.textContent = ":" + hexCode;
-  body.style.backgroundColor = `${hexCode}`;
+  document.body.style.backgroundColor = hex_code;
+  hex_code_display.style.display = "block";
+  hex_code_display.textContent = hex_code;
 });
